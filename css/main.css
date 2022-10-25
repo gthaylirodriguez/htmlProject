@@ -10,11 +10,11 @@
     background-image: url("../img/header_top_img.png");
     transition: all 1s ease;
 }
-#cabecera-arriba {
+#cabecera-top {
     display: grid;
     grid-template-columns: 1fr auto auto auto;
     padding: 1% 1% 1% 1%;
-    background-color: rgb(0 0 0 / 75%);
+    background-color: rgb(0 0 0 / 65%);
     align-items: center;
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
 }
@@ -28,19 +28,7 @@
     visibility: hidden !important;
     background-color: rgb(0 0 0 / 70%);
 }
-#redes-sociales{
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    left: 4vh;
-    top: 35%;
-    display: grid;
-    grid-template-columns: 1fr;
-    z-index: 999999;
-}
-#redes_sociales a:nth-child(5) {
-    margin-left: 4px !important;
-}
+
 #menu-img{
     padding: 2px 15px 2px 30px;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -71,4 +59,177 @@
     border: 1px solid #7E7E7E;
     transform: rotate(90deg) !important;
     margin: 0 0 50px -23px;
+}
+
+#redes-sociales{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    left: 4vh;
+    top: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 999999;
+    align-items: center;
+}
+#redes-sociales a:nth-child(5) {
+    margin-left: 4px !important;
+}
+
+#redes-sociales a {
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+#login-seccion {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#login-contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+    margin: 0 75px;
+}
+#login-contenedor a:nth-child(1){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-right: 15px;
+}
+#login-contenedor a:nth-child(2){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-left: 15px;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+#login-contenedor a{
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+#login-contenedor a:hover{
+    cursor: pointer;
+}
+
+#lenguaje-contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: fit-content;
+    margin: 0 75px;
+}
+#lenguaje-contenedor a:nth-child(1){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-right: 15px;
+}
+#lenguaje-contenedor a:nth-child(2){
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+    padding-left: 15px;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+#lenguaje-contenedor a{
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+#lenguaje-contenedor a:hover{
+    cursor: pointer;
+}
+
+#cabecera-bottom{
+    padding: 0 5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(0 0 0 / 45%);
+}
+
+#columna-busqueda {
+    grid-template-columns: 1fr auto;
+    padding: 2% 0 1% 0;
+    display: grid;
+}
+#caja-busqueda{
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+
+    color: #FFFFFF;
+    background: none;
+    padding: 10px 0 10px 25px;
+    min-width: 20vw;
+    grid-column: 2/3;
+}
+#caja-busqueda::placeholder{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+#titulo-bottom {
+    display: grid;
+    margin-bottom: 6%;
+    align-items: flex-end;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+}
+#titulo-luxury-bottom{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    line-height: 40px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+#titulo-real-bottom {
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    color: #FFFFFF;
+    margin-bottom: 1.5%;
+}
+
+#titulo-view-propiedades {
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    border: 2px solid #ffffff;
+    border-radius: 80px;
+    padding: 12px 45px;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
 }
