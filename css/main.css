@@ -347,11 +347,7 @@ a.ver-propiedades-boton{
     height: 16px;
 }
 
-#galeria-propiedades  div .img-box {
-    transform: scaleX(-1);
-}
-
-#galeria-propiedades .fotos-movimiento{
+#galeria-propiedades{
     display: flex;
     height: 100%;
     scroll-behavior: smooth;
@@ -368,15 +364,18 @@ div#galeria-propiedades {
 #para-venta-mitad {
     background-image: url("../img/pais_1.png");
     text-decoration: none;
+    margin: 3px;
 }
 #para-venta-england {
     background-image: url("../img/pais_2.png");
     text-decoration: none;
+    margin: 3px;
 }
 
 #para-venta-france {
     background-image: url("../img/pais_3.png");
     text-decoration: none;
+    margin: 3px;
 }
 
 .foto-content {
