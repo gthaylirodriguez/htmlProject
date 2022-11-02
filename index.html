@@ -1,118 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Acelera Digital Proyecto</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="css/main.css" type="text/css">
-    </head>
-    <body>
-        <header id="cabecera-page">
-            <div id="cabecera-top">
-                <div id="log-uniq">
-                    <a href="../index.html" id="escritorio-log-cabecera">
-                        <img src="img/Logo.png" alt="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acelera Digital Proyecto</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <header id="cabecera-page">
+        <div id="cabecera-top">
+            <div id="log-uniq">
+                <a href="../index.html" id="escritorio-log-cabecera">
+                    <img src="img/Logo.png" alt="">
+                </a>
+            </div>
+            <div id="login-seccion">
+                <div id="login-contenedor">
+                    <a id="login-contenedor-boton" href="#">Log in</a>
+                    <a id="singup-contenedor-boton" href="#">Sign-up</a>
+                </div>
+                <div id="lenguaje-contenedor">
+                    <a id="lenguaje-contenedor-esp" href="#">ESP</a>
+                    <a id="lenguaje-contenedor-eng" href="#">ENG</a>
+                </div>
+            </div>
+            <div id="menu-img">
+                <img src="img/menu_top.png" alt="">
+                <ul id="show-menu-top">
+                    <li>
+                        <a href="#">Toys</a>
+                    </li>
+                    <li>
+                        <a href="#">Art</a>
+                    </li>
+                    <li>
+                        <a href="#">Real Estate</a>
+                    </li>
+                    <li id="session-menu-top" style="display: none; visibility: hidden;">
+                        <a href="#">Log in</a>
+                        <a href="#">Sign-up</a>
+                        <a href="#">ESP</a>
+                        <a href="#">ENG</a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="cabecera-bottom">
+            <div id="columna-busqueda">
+                <input type="search" id="caja-busqueda" placeholder="Ex. Villa Budapest" src="">
+            </div>
+            <div id="titulo-bottom">
+                <span id="titulo-luxury-bottom">Luxury</span>
+                <span id="titulo-real-bottom">Real Estate</span>
+                <a id="titulo-view-propiedades" href="#">View all properties</a>
+            </div>
+        </div>
+
+        <div id="redes-sociales">
+            <span id="seguir-span">FOLLOW</span>
+            <span id="seguir-linea"></span>
+            <a href="https://www.instagram.com" target="_blank"> <img src="img/ig.png"></a>
+            <a href="https://www.facebook.com" target="_blank"> <img src="img/fb.png"></a>
+            <a href="https://www.youtube.com" target="_blank"> <img src="img/youtube.png"></a>
+            <a href="https://www.twitter.com" target="_blank"> <img src="img/twitter.png"></a>
+        </div>
+    </header>
+    <div id="details-page">
+        <div id="propiedades-en-venta-body" class="grid-body-1">
+            <div id="galeria-para-venta">
+                <div id="galeria-propiedades" class="fotos-movimiento">
+                    <a href="#" id="para-venta-inicio" class="foto-content caja-imagen">
+                        <div>
+                            <span class="pais-venta">England</span>
+                            <span class="local-venta">Glasgow</span>
+                        </div>
+                    </a>
+                    <a href="#" id="para-venta-centro" class="foto-content caja-imagen">
+                        <div>
+                            <span class="pais-venta">England</span>
+                            <span class="local-venta">Glasgow</span>
+                        </div>
+                    </a>
+                    <a href="#" id="para-venta-fin" class="foto-content caja-imagen">
+                        <div>
+                            <span class="pais-venta">France</span>
+                            <span class="local-venta">Marseilles</span>
+                        </div>
                     </a>
                 </div>
-                <div id="login-seccion">
-                    <div id="login-contenedor">
-                        <a id="login-contenedor-boton"  href="#">Log in</a>
-                        <a id="singup-contenedor-boton"  href="#">Sign-up</a>
-                    </div>
-                    <div id="lenguaje-contenedor">
-                        <a id="lenguaje-contenedor-esp" href="#">ESP</a>
-                        <a id="lenguaje-contenedor-eng" href="#">ENG</a>
-                    </div>
-                </div>
-                <div id="menu-img">
-                    <img src="img/menu_top.png" alt="">
-                    <ul id="show-menu-top">
-                        <li>
-                            <a href="#">Toys</a>
-                        </li>
-                        <li>
-                            <a href="#">Art</a>
-                        </li>
-                        <li>
-                            <a href="#">Real Estate</a>
-                        </li>
-                        <li id="session-menu-top" style="display: none; visibility: hidden;">
-                            <a href="#">Log in</a>
-                            <a href="#">Sign-up</a>
-                            <a href="#">ESP</a>
-                            <a href="#">ENG</a>
-
-                        </li>
-        
-                    </ul>
-                </div>
             </div>
-            <div id="cabecera-bottom">
-                <div id="columna-busqueda">
-                    <input type="search" id="caja-busqueda" placeholder="Ex. Villa Budapest" src="" >
-                </div>
-                <div id="titulo-bottom">
-                    <span id="titulo-luxury-bottom">Luxury</span>
-                    <span id="titulo-real-bottom">Real Estate</span>
-                    <a id="titulo-view-propiedades" href="#">View all properties</a>
-                </div>
-            </div>
-
-            <div id="redes-sociales">
-                <span id="seguir-span">FOLLOW</span>
-                <span id="seguir-linea"></span>
-                <a href="https://www.instagram.com" target="_blank"> <img src="img/ig.png"></a>
-                <a href="https://www.facebook.com" target="_blank"> <img src="img/fb.png"></a>
-                <a href="https://www.youtube.com" target="_blank"> <img src="img/youtube.png"></a>
-                <a href="https://www.twitter.com" target="_blank"> <img src="img/twitter.png"></a>
-            </div>
-        </header>
-        <div id="details-page">
-            <div id="propiedades-en-venta-body" class="grid-body-1">
-                <div id="galeria-para-venta">
-                    <div id="galeria-propiedades" class="fotos-movimiento" >
-                        <a href="#" id="para-venta-mitad" class="foto-content">
-                            <div>
-                                <span class="pais-venta">England</span>
-                                <span class="local-venta">Glasgow</span>
-                            </div>
-                        </a>
-                        <a href="#" id="para-venta-england" class="foto-content">
-                            <div>
-                                <span class="pais-venta">England</span>
-                                <span class="local-venta">Glasgow</span>
-                            </div>
-                        </a>
-                        <a href="#" id="para-venta-france" class="foto-content">
-                            <div>
-                                <span class="pais-venta">France</span>
-                                <span class="local-venta">Marseilles</span>
-                            </div>
-                        </a>
+            <div id="descripcion-en-venta-body">
+                <div id="worldwide-en-venta" class="titulo-worlwide">Worldwide gallery</div>
+                <div id="propiedades-en-venta" class="titulo-propiedades">Properties for sale</div>
+                <div id="descripcion-en-venta" class="titulo-descripcion">In an ultimate jetsetter location or a forever
+                    home, our experts have the expertise it takes to knowledgeably advise you at every stage of the
+                    property cycle.</div>
+                <div id="navegador-para-venta">
+                    <div id="navegador-previo" class="etiqueta-navegador">
+                        <img class="navegador-imagen" src="img/flecha_izquierda.png">
+                        <span>PREV</span>
                     </div>
-                </div>
-                <div id="descripcion-en-venta-body">
-                    <div id="worldwide-en-venta" class="titulo-worlwide">Worldwide gallery</div>
-                    <div id="propiedades-en-venta" class="titulo-propiedades">Properties for sale</div>
-                    <div id="descripcion-en-venta" class="titulo-descripcion">In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.</div>
-                    <div id="navegador-para-venta">
-                        <div id="navegador-previo" class="etiqueta-navegador">
-                            <img class="navegador-imagen" src="img/flecha_izquierda.png">
-                            <span>PREV</span>
-                        </div>
-                        <div id="int-nav-prop-sale" class="ver-propiedades-boton" >View all properties</div>
-                        <div id="navegador-siguiente" class="etiqueta-navegador">
-                            <span>NEXT</span>
-                            <img class="navegador-imagen" src="img/flecha_derecha.png">
-                        </div>
+                    <div id="int-nav-prop-venta" class="ver-propiedades-boton">View all properties</div>
+                    <div id="navegador-siguiente" class="etiqueta-navegador">
+                        <span>NEXT</span>
+                        <img class="navegador-imagen" src="img/flecha_derecha.png">
                     </div>
                 </div>
             </div>
-            <div id="propiedades-en-renta-body" class="grid-body-1"></div>
-            <div id="desarrollo-body" class="grid-body-1"></div>
-            <div id="arte-cultura-body" class="grid-body-1"></div>
         </div>
-        <footer id="footer-page"></footer>
 
-    </body>
+        <div id="propiedades-en-renta-body" class="grid-body-1">
+            <div id="descripcion-en-renta-body">
+                <div id="worldwide-en-renta" class="titulo-worlwide">Worldwide gallery</div>
+                <div id="propiedades-en-renta" class="titulo-propiedades">Properties for Rent</div>
+                <div id="descripcion-en-renta" class="titulo-descripcion">In an ultimate jetsetter location or a forever
+                    home, our experts have the expertise it takes to knowledgeably advise you at every stage of the
+                    property cycle.</div>
+                <div id="navegador-para-renta">
+                    <div id="navegador-previo" class="etiqueta-navegador">
+                        <img class="navegador-imagen" src="img/flecha_izquierda.png">
+                        <span>PREV</span>
+                    </div>
+                    <div id="int-navegador-renta" class="ver-propiedades-boton">View all properties</div>
+                    <div id="navegador-siguiente" class="etiqueta-navegador">
+                        <span>NEXT</span>
+                        <img class="navegador-imagen" src="img/flecha_derecha.png">
+                    </div>
+                </div>
+            </div>
+            <div id="galeria-para-renta">
+                <div id="galeria-propiedades-renta" class="fotos-movimiento">
+                    <a href="#" id="para-renta-inicio" class="foto-content">
+                        <div>
+                            <span class="pais-renta">France</span>
+                            <span class="local-renta">Carcasson</span>
+                        </div>
+                    </a>
+                    <a href="#" id="para-renta-centro" class="foto-content">
+                        <div>
+                            <span class="pais-renta">Germany</span>
+                            <span class="local-renta">Munich</span>
+                        </div>
+                    </a>
+                    <a href="#" id="para-renta-fin" class="foto-content">
+                        <div>
+                            <span class="pais-renta">France</span>
+                            <span class="local-renta">Co</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="desarrollo-body" class="grid-body-1"></div>
+    <div id="arte-cultura-body" class="grid-body-1"></div>
+    </div>
+    <footer id="footer-page"></footer>
+
+</body>
+
 </html>
