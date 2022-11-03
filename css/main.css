@@ -483,3 +483,33 @@ div#propiedades-en-renta-body {
     text-decoration: none;
     margin: 3px;
 }
+
+
+/* Desarrollo*/
+
+.desarrollo-titulo-worlwide{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+    color: #DF991B;
+}
+
+.desarrollo-titulo-propiedades{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#desarrollo-galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 5% 0 5%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
