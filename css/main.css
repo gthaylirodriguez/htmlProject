@@ -365,18 +365,18 @@ div#galeria-propiedades , div#galeria-propiedades-renta{
 }
 
 #para-venta-inicio {
-    background-image: url("../img/pais_1.png");
+    background-image: url("../img/pais_2.png");
     text-decoration: none;
     margin: 3px;
 }
 #para-venta-centro {
-    background-image: url("../img/pais_2.png");
+    background-image: url("../img/pais_3.png");
     text-decoration: none;
     margin: 3px;
 }
 
 #para-venta-fin {
-    background-image: url("../img/pais_3.png");
+    background-image: url("../img/pais_1.png");
     text-decoration: none;
     margin: 3px;
 }
@@ -478,10 +478,17 @@ div#propiedades-en-renta-body {
     margin: 3px;
 }
 
-#para-renta-final {
+#para-renta-fin {
     background-image: url("../img/pais_3_renta.png");
     text-decoration: none;
     margin: 3px;
+}
+
+.foto-content:hover > div .local-renta {
+    color: #000000;
+}
+.foto-content:hover > div .pais-renta {
+    color: #464547;
 }
 
 
@@ -513,3 +520,56 @@ div#propiedades-en-renta-body {
     column-gap: 20px;
     row-gap: 20px;
 }
+
+.desarrollo-imagen{
+    text-decoration: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.desarrollo-imagen:hover{
+    border: 1px solid #7E7E7E;
+    transform: translateY(-1vw);
+}
+
+.desarrollo-imagen-contenido {
+    height: 12vw;
+}
+
+.desarrollo-imagen-contenido img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.desarrollo-galeria-etiqueta {
+    display: grid;
+    background: white;
+    padding: 1vw 0 1vw 2vw;
+}
+
+.desarrollo-propiedad-name {
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #464547;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.desarrollo-propiedad-city {
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 30px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
