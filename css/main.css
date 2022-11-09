@@ -376,7 +376,7 @@ div#galeria-propiedades , div#galeria-propiedades-renta{
 }
 
 #para-venta-fin {
-    background-image: url("../img/pais_1.png");
+    background-image: url("../img/pais_3.png");
     text-decoration: none;
     margin: 3px;
 }
@@ -493,7 +493,9 @@ div#propiedades-en-renta-body {
 
 
 /* Desarrollo*/
-
+#desarrollo-body {
+    display: grid;
+}
 .desarrollo-titulo-worlwide{
     font-family: 'PF Regal Display Pro';
     font-style: normal;
@@ -573,3 +575,210 @@ div#propiedades-en-renta-body {
     text-overflow: ellipsis;
 }
 
+#desarrollo-ver-propiedades{
+    align-self: center;
+    justify-self: center;
+    margin-top: 1.5%;
+}
+/*ARTE Y CULTURA*/
+#arte-cultura-body{
+    height: 40vw;
+    display: grid;
+    margin-top: 5%;
+    grid-template-rows: 10% 10% 60% 10% 10%;
+    grid-template-columns: 5% 5% 35% 5% 5% 35% 5% 5%;
+}
+
+#arte-cultura-cuadro-negro{
+    grid-row: 1/6;
+    grid-column: 2/4;
+    background-color: #17181a;
+}
+
+#arte-cultura-fotos{
+    grid-column: 3/6;
+    grid-row: 2/5;
+    overflow: hidden;
+}
+
+#gall-art-content{
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: 300%;
+    margin-left: -100%;
+}
+/* PIE*/
+#pie-pagina{
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+    display: grid;
+}
+#pie-lista-registro{
+    background: #26282B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+    padding: 2% 5%;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    z-index: 999;
+    grid-template-rows: auto 1fr;
+}
+
+#pie-etiqueta-unirse{
+    grid-column: 1/2;
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #DF991B;
+    padding-top: 15px;
+}
+#pie-etiqueta-desbloqueo{
+    grid-column: 1/2;
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 45px;
+
+    color: #FFFFFF;
+    align-self: start;
+}
+
+#pie-formulario {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.primerLineaNombre{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+}
+
+.nombreUsuario{
+    font-size: 14px;
+    /*font-weight: 400;*/
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: brandon-grotesque, sans-serif;
+}
+
+#pie-summit{
+    background-color: unset;
+    color: #DF991B;
+    padding: 5px 30px;
+    border-radius: 100px !important;
+    letter-spacing: 3px;
+    border: 1px solid #DF991B;
+    font-size: 17px;
+    font-family: brandon-grotesque;
+    font-weight: 390;
+    margin-top: 0.6vw;
+}
+
+.pie-linea-summit{
+    display: flex;
+    justify-content: end;
+    margin-top: 0.6vw;
+}
+
+#nombreUsuarioInput{
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+
+    color: #FFFFFF;
+    background: none;
+    padding: 10px 0 10px 25px;
+    min-width: 40vw;
+    grid-column: 3/3;
+}
+#nombreUsuarioInput::placeholder{
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 390;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+.fondo-pie{
+    background: #000000;
+}
+
+#pie-fondo{
+    padding: 12% 0 0 0;
+    grid-column: 1/3;
+    grid-row: 2/5;
+}
+
+#pie-contenido-columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1% 5%;
+}
+
+.pie-estilo-letras{
+    font-family: 'Brandon Grotesque';
+    font-style: normal;
+    font-weight: 330;
+    font-size: 35 px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+#pie-contenido-columnas div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#pie-contenido-columnas div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+#pie-contenido-columnas div span a{
+    text-decoration: none;
+    color: #B4B7B7;
+}
+
+#pie-contenido-columnas div:nth-child(1){
+    align-items:flex-start;
+}
+
+#pie-contenido-columnas div:nth-child(4){
+    align-items: end;
+}
+
+#pie-numero{
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+
+    color: #FFFFFF !important;
+}
+
+#pie-call-center{
+    font-family: "PF Regal Display Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+
+    color: #B4B7B7;
+}
