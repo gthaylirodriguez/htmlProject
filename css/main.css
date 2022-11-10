@@ -416,9 +416,13 @@ div#galeria-propiedades , div#galeria-propiedades-renta{
 
 .foto-content:hover > div .local-venta {
     color: #000000;
+    text-align: center;
 }
 .foto-content:hover > div .pais-venta {
     color: #464547;
+    background-image: url("../img/logo_pais.png");
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
 .caja-imagen {
@@ -486,9 +490,14 @@ div#propiedades-en-renta-body {
 
 .foto-content:hover > div .local-renta {
     color: #000000;
+    text-align: center;
+
 }
 .foto-content:hover > div .pais-renta {
     color: #464547;
+    background-image: url("../img/logo_pais.png");
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
 
@@ -587,6 +596,7 @@ div#propiedades-en-renta-body {
     margin-top: 5%;
     grid-template-rows: 10% 10% 60% 10% 10%;
     grid-template-columns: 5% 5% 35% 5% 5% 35% 5% 5%;
+    margin-bottom: 5%;
 }
 
 #arte-cultura-cuadro-negro{
@@ -601,13 +611,29 @@ div#propiedades-en-renta-body {
     overflow: hidden;
 }
 
-#gall-art-content{
+#arte-cultura-galeria{
     display: flex;
     overflow: hidden;
-    height: 100%;
-    width: 300%;
-    margin-left: -100%;
 }
+
+#arte-cultura-galeria a {
+    width: 100%;
+}
+
+#arte-cultura-galeria img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#arte-cultura-galeria a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
 /* PIE*/
 #pie-pagina{
     grid-template-rows: auto auto 1fr;
@@ -730,7 +756,7 @@ div#propiedades-en-renta-body {
 }
 
 .pie-estilo-letras{
-    font-family: 'Brandon Grotesque';
+    font-family: brandon-grotesque;
     font-style: normal;
     font-weight: 330;
     font-size: 35 px;
@@ -781,4 +807,28 @@ div#propiedades-en-renta-body {
     font-size: 28px;
 
     color: #B4B7B7;
+}
+
+#pie-copyright {
+    font-family: brandon-grotesque;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFF;
+    margin: 1% 5%;
+    border-top: 1px solid white;
+    padding-top: 1%;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url("../fonts/Brandon_reg.otf");
+
+}
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url("../fonts/PFRegalDisplayPro-Regular.ttf");
 }
