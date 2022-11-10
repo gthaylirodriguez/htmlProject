@@ -464,6 +464,14 @@ div#galeria-propiedades , div#galeria-propiedades-renta{
 
 /* Renta*/
 
+#galeria-para-renta {
+    display: flex;
+    align-items: end;
+    align-content: end;
+    overflow: hidden;
+    direction: rtl;
+}
+
 div#propiedades-en-renta-body {
     margin-bottom: 5%;
 }
@@ -477,7 +485,7 @@ div#propiedades-en-renta-body {
 }
 
 #para-renta-inicio {
-    background-image: url("../img/pais_1_renta.png");
+    background-image: url("../img/pais_3_renta.png");
     text-decoration: none;
     margin: 3px;
 }
@@ -488,7 +496,7 @@ div#propiedades-en-renta-body {
 }
 
 #para-renta-fin {
-    background-image: url("../img/pais_3_renta.png");
+    background-image: url("../img/pais_1_renta.png");
     text-decoration: none;
     margin: 3px;
 }
