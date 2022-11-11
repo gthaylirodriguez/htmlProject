@@ -881,7 +881,7 @@ div#arte-cultura-descripcion-servicios {
     border-top: 1px solid white;
     padding-top: 1%;
 }
-
+/* FONTS */
 @font-face {
     font-family: 'brandon-grotesque';
     src: url("../fonts/Brandon_reg.otf");
@@ -891,4 +891,60 @@ div#arte-cultura-descripcion-servicios {
 @font-face {
     font-family: 'PF Regal Display Pro';
     src: url("../fonts/PFRegalDisplayPro-Regular.ttf");
+}
+
+/* MEDIA QUERIES */
+
+/*Header*/
+@media(max-width: 1515px){
+    #redes-sociales {
+        left: 3vh;
+    }
+}
+
+@media(max-width: 1150px){
+    #redes-sociales {
+        left: 2vh;
+    }
+}
+
+@media(max-width: 750px){
+    #redes-sociales {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+@media (min-width: 2500px) {
+    #redes-sociales a {
+        margin-bottom: 0.6vw;
+    }
+    #redes-sociales a img {
+        height: 1vw;
+    }
+    #redes-sociales a {
+        margin-bottom: 0.7vw;
+    }
+
+    #seguir-span {
+        margin: 0 0 3.5vw -1.2vw;
+        font-size: 0.9vw;
+    }
+    #seguir-linea{
+        height: 0;
+        width: 3vw;
+        border: 0.1vw solid #7E7E7E;
+        margin: 0 0 2.4vw -1vw;
+        transform: rotate(90deg) !important;
+    }
+
+
+}
+
+
+@media(max-width: 980px){
+    #redes-sociales{
+        visibility: hidden !important;
+        display: none !important;
+    }
 }
