@@ -513,6 +513,9 @@ div#propiedades-en-renta-body {
     text-align: center;
 }
 
+#descripcion-en-renta-body {
+    margin: 0 10%;
+}
 
 /* Desarrollo*/
 #desarrollo-body {
