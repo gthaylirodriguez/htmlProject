@@ -30,6 +30,14 @@
     background-color: rgb(0 0 0 / 70%);
 }
 
+#escritorio-log-cabecera img{
+    height: 18px;
+}
+
+#menu-img img {
+    width: 34px;
+}
+
 #menu-img{
     padding: 2px 15px 2px 30px;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -98,7 +106,7 @@
     font-family: brandon-grotesque;
     font-style: normal;
     font-weight: 390;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 14px;
 
     color: #FFFFFF;
@@ -108,7 +116,7 @@
     font-family: brandon-grotesque;
     font-style: normal;
     font-weight: 350;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 14px;
 
     color: #FFFFFF;
@@ -133,7 +141,7 @@
     font-family: brandon-grotesque;
     font-style: normal;
     font-weight: 390;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 14px;
 
     color: #FFFFFF;
@@ -143,7 +151,7 @@
     font-family: brandon-grotesque;
     font-style: normal;
     font-weight: 350;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 14px;
 
     color: #FFFFFF;
@@ -942,9 +950,232 @@ div#arte-cultura-descripcion-servicios {
 }
 
 
+/* MEDIA QUERY*/
+@media (min-width: 2500px) {
+    #escritorio-log-cabecera img {
+        height: 1.3vw;
+    }
+    #menu-img img {
+        width: 1.7vw;
+    }
+    #login-contenedor a:nth-child(1) {
+        font-size: 1vw;
+    }
+    #login-contenedor a:nth-child(2) {
+        font-size: 1vw;
+        border-left: 0.1vw solid rgba(255, 255, 255, 0.5);
+    }
+
+    #lenguaje-contenedor a:nth-child(1) {
+        font-size: 1vw;
+    }
+    #lenguaje-contenedor a:nth-child(2) {
+        font-size: 1vw;
+        border-left: 0.1vw solid rgba(255, 255, 255, 0.5);
+    }
+
+    #caja-busqueda {
+        font-size: 0.9vw;
+        padding: 0.6vw 0 0.6vw 1vw;
+        min-width: 25vw;
+        border: 0.06vw solid #FFFFFF;
+    }
+    #caja-busqueda:placeholder {
+        font-size: 0.9vw;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    #caja-busqueda{
+        font-size: 18px;
+        padding: 7px 0 7px 20px;
+    }
+    
+    #caja-busqueda::placeholder{
+        font-size: 18px;
+    }
+
+    #titulo-bottom {
+        margin-bottom: 4%;
+    }
+    
+    #titulo-luxury-bottom {
+        font-size: 30px;
+    }
+    #titulo-real-bottom {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    #titulo-view-propiedades {
+        font-size: 22px;
+        padding: 8px 45px;
+    }
+    .titulo-worlwide {
+        font-size: 26px;
+    }
+    .titulo-propiedades {
+        font-size: 42px;
+    }
+
+    .titulo-descripcion {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .etiqueta-navegador {
+        font-size: 20px;
+    }
+
+    .pais-venta {
+        font-size: 18px;
+    }
+    .local-venta {
+        font-size: 22px;
+    }
+    .foto-content {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 1300px){
+    #pie-fondo {
+        padding: 15% 0 0 0;
+    }
+
+    #caja-busqueda {
+        min-width: 30vw;
+    }
+    #columna-busqueda {
+        padding: 3% 0 1% 0;
+    }
+}
+@media (max-width: 1200px){
+    #pie-fondo {
+        padding: 16% 0 0 0;
+    }
+}
+
+@media (max-width: 1000px){
+    #caja-busqueda {
+        min-width: 35vw;
+    }
+}
+
+@media (max-width: 980px) {
+    div#details-page {
+        margin: 7% 0;
+    }
+    div#propiedades-en-venta-body {
+        margin-bottom: 7%;
+    }
+    div#propiedades-en-renta-body {
+        margin-bottom: 7%;
+    }
+    #arte-cultura-body {
+        margin-top: 7%;
+    }
+    .titulo-propiedades {
+        margin-bottom: 7%;
+    }
+    div#desarrollo-body {
+        margin-bottom: 6%;
+    }
+}
+
 @media(max-width: 980px){
     #redes-sociales{
         visibility: hidden !important;
         display: none !important;
+    }
+
+    #login-contenedor{
+        display: none !important;
+        visibility: hidden !important;
+    }
+    #lenguaje-contenedor{
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+@media(max-width: 850px){
+    #caja-busqueda {
+        min-width: 40vw;
+    }
+}
+@media(max-width: 835px){
+    #pie-etiqueta-desbloqueo {
+        margin-bottom: 20px;
+    }
+    #pie-lista-registro {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+    #pie-fondo {
+        padding: 30% 0 0 0;
+    }
+    #pie-contenido-columnas {
+        row-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #pie-contenido-col1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #pie-contenido-col4 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    div#pie-contenido-columnas {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div#pie-contenido-col1 {
+        justify-self: flex-start;
+    }
+    div#pie-contenido-col2 {
+        justify-self: flex-end;
+    }
+    div#pie-contenido-col3 {
+        justify-self: flex-start;
+    }
+    div#pie-contenido-col4 {
+        justify-self: flex-start;
+    }
+    .pie-estilo-letras {
+        font-size: 18px;
+    }
+    #pie-call-center {
+        font-size: 23px;
+    }
+    #pie-numero {
+        font-size: 24px;
+    }
+    #pie-fondo #pie-contenido-columnas div:nth-child(4) {
+        margin-bottom: 3%;
+    }
+}
+
+
+@media(max-width: 550px){
+    #escritorio-log-cabecera{
+        display: block !important;
+        visibility: inherit !important;    
+    }
+    #escritorio-log-cabecera img{
+        margin: 5px 0;
+        height: 50px;
+        content:url("../img/cabecera_logo_movil.svg");
+    }
+
+}
+
+@media(max-width: 500px){
+    #caja-busqueda {
+        grid-column: 1/3;
+        margin-top: 20px;
     }
 }
