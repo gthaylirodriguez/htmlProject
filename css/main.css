@@ -908,11 +908,19 @@ div#arte-cultura-descripcion-servicios {
     #redes-sociales {
         left: 3vh;
     }
+
+    #arte-cultura-body {
+        height: 46vw;
+    }
 }
 
 @media(max-width: 1150px){
     #redes-sociales {
         left: 2vh;
+    }
+
+    #arte-cultura-body {
+        height: 55vw;
     }
 }
 
@@ -1036,6 +1044,10 @@ div#arte-cultura-descripcion-servicios {
     .foto-content {
         width: 300px;
     }
+
+    #arte-cultura-body {
+        height: 45vw;
+    }
 }
 
 
@@ -1098,13 +1110,53 @@ div#arte-cultura-descripcion-servicios {
         display: none !important;
         visibility: hidden !important;
     }
+
+    div#details-page {
+        margin: 7% 0;
+    }
 }
+
+@media (max-width: 915px) {
+    span#pie-etiqueta-unirse {
+        line-height: 32px;
+        font-size: 30px;
+    }
+
+    #pie-etiqueta-desbloqueo {
+        line-height: 40px;
+        font-size: 40px;
+    }
+    
+}
+
+@media (max-width:900) {
+    #arte-cultura-body {
+        height: 57vw;
+    }
+}
+
+
 
 @media(max-width: 850px){
     #caja-busqueda {
         min-width: 40vw;
     }
+
+    #arte-cultura-body {
+        height: 70vw;
+    }
+
+    #desarrollo-body {
+        grid-template-columns: 1fr;
+    }
+
+    #desarrollo-ver-propiedades {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin-top: 2.5%;
+    }
 }
+
 @media(max-width: 835px){
     #pie-etiqueta-desbloqueo {
         margin-bottom: 20px;
@@ -1112,6 +1164,11 @@ div#arte-cultura-descripcion-servicios {
     #pie-lista-registro {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr;
+    }
+    #pie-formulario {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        margin-top: 5%;
     }
     #pie-fondo {
         padding: 30% 0 0 0;
@@ -1157,8 +1214,43 @@ div#arte-cultura-descripcion-servicios {
     #pie-fondo #pie-contenido-columnas div:nth-child(4) {
         margin-bottom: 3%;
     }
+
+    .pie-linea-summit{
+        justify-content: start;
+    }
+
+    #pie-summit{
+        background-image: url("/img/footer_flecha_derecha.png");
+        background-repeat: no-repeat;
+        align-content: center;
+        background-position: 65px;  
+        width: 100%;
+        border: none;
+    }
+
 }
 
+@media (max-width: 800px) {
+    #arte-cultura-body {
+        height: 81vw;
+    }
+}
+
+@media (max-width: 700px) {
+    #arte-cultura-body {
+        height: 82vw;
+    }
+
+    #desarrollo-galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    div#details-page {
+        margin: 10% 0 7% 0;
+    }
+}
 
 @media(max-width: 550px){
     #escritorio-log-cabecera{
@@ -1169,8 +1261,8 @@ div#arte-cultura-descripcion-servicios {
         margin: 5px 0;
         height: 50px;
         content:url("../img/cabecera_logo_movil.svg");
+        background-position: 10px;
     }
-
 }
 
 @media(max-width: 500px){
@@ -1178,4 +1270,53 @@ div#arte-cultura-descripcion-servicios {
         grid-column: 1/3;
         margin-top: 20px;
     }
+
+    div#pie-contenido-col2 {
+        justify-self: start;
+        align-items: flex-start;
+    }
+    
+    div#pie-contenido-col3 {
+        justify-self: start;
+        align-items: flex-start;
+    }
+    #pie-contenido-columnas div:nth-child(4){
+        align-items: flex-start;
+    }
+
+    #pie-fondo {
+        margin-top: 5%;
+    }
+
+    #arte-cultura-body {
+        margin-bottom: 15%;
+    }
+
+    #desarrollo-galeria {
+        grid-template-columns: 1fr;
+    }
+    #desarrollo-galeria a:nth-child(6),
+    #desarrollo-galeria a:nth-child(5),
+    #desarrollo-galeria a:nth-child(4),
+    #desarrollo-galeria a:nth-child(3),
+    #desarrollo-galeria a:nth-child(2)
+    {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #desarrollo-galeria {
+        margin: 3% 0 0 0;
+    }
+
+    .desarrollo-imagen-contenido {
+        height: 60vw;
+    }
+    .desarrollo-galeria-etiqueta {
+        padding: 4vw 0 4vw 6vw;
+    }
+}
+
+@media (max-width: 430px) {
+    
 }
