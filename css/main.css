@@ -1296,20 +1296,17 @@ div#arte-cultura-descripcion-servicios {
         border: none;
     }
 
-    #arte-cultura-navegador-contacto{
+    #arte-cultura-navegador-contacto, #int-navegador-renta, #int-navegador-venta{
         background-image: url("/img/footer_flecha_derecha.png");
         background-repeat: no-repeat;
         align-content: space-between;
         background-position: 10px;  
-        
-        width: 100%;
         border: none;
         color: #DF991B;
         margin-left: 60px;
         text-align: center;
         margin-bottom: 2%;
     }
-
 }
 
 @media (max-width: 800px) {
@@ -1398,6 +1395,29 @@ div#arte-cultura-descripcion-servicios {
         display: none;
         visibility: hidden;
         opacity: 0;
+    }
+
+    #arte-cultura-navegador-contacto, #int-navegador-venta, #int-navegador-renta{
+        width: 100%;
+    }
+
+    #descripcion-en-venta-body, #descripcion-en-renta-body {
+        margin: 0 5%;
+        grid-column: 1/3;
+    }
+    div#galeria-para-venta {
+        grid-column: 1/3;
+        height: 50vw;
+        grid-row: 2/3;
+        margin-top: 7%;
+        margin-right: 0;
+    }
+    div#galeria-para-renta {
+        grid-column: 1/3;
+        height: 50vw;
+        grid-row: 2/3;
+        margin-top: 7%;
+        margin-left: 0;
     }
 }
 
